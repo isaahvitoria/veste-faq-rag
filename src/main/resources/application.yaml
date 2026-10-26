@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: loja-faq-rag
+server:
+  port: ${PORT:8080}
+  error:
+    include-message: never
+    include-stacktrace: never
+gemini:
+  api-key: ${GEMINI_API_KEY:}
+  model: ${GEMINI_MODEL:gemini-3.8-flash}
